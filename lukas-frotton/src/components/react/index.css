@@ -1,0 +1,248 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+--opacity: 1;
+rgba(29, 78, 216, var(--opacity));
+}
+*/
+
+@keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+      text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px rgb(116, 115, 126),
+        0 0 80px rgb(229, 229, 230),
+        0 0 90px rgb(225, 224, 234),
+        0 0 100px rgb(205, 210, 215),
+        0 0 150px rgb(195, 196, 202);
+    }
+    20%, 24%, 55% {       
+      text-shadow: none;
+    }
+  }
+
+@keyframes left-swipe { 
+
+}
+
+@keyframes right-swipe { 
+
+}
+
+@keyframes my-spin-basic {
+    0% {
+      transform: rotate3d(1, 0, 0, 0deg); 
+    }
+    100% {
+      transform: rotate3d(1, 0, 0, 360deg); 
+    }
+  }
+  
+@keyframes fadeInRight{
+    0%{
+        transform: translateX(100%); 
+        opacity: 0; 
+    }
+    50% { 
+        opacity: 1; 
+        
+    }
+
+    100% {
+        transform: translateX(0%); 
+    }
+}
+
+@keyframes fadeInLeft{
+    0%{
+        transform: translateX(-100%); 
+        opacity: 0; 
+    }
+    50% { 
+        opacity: 1; 
+        
+    }
+
+    100% {
+        transform: translateX(0%); 
+    }
+
+}
+
+@keyframes dropdownEnter {
+    0% {
+        opacity: 0;
+        max-height: 0;
+        visibility: hidden;
+      }
+      100% {
+        opacity: 1;
+        max-height: auto; 
+        visibility: visible;
+      }
+}
+
+@keyframes dropdownExit {
+    0% {
+        opacity: 1;
+        max-height: auto;
+        visibility: visible;
+      }
+      100% {
+        opacity: 0;
+        max-height: 0;
+        visibility: hidden;
+      }
+}
+
+@keyframes textDropdownEnter{
+    from {
+        opacity: 0; 
+        transform: translateY(10%)
+
+    }
+    to {
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+@keyframes textDropDownExit{
+    from {
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+    to {
+        opacity: 0; 
+        transform: translateY(10%); 
+
+    }
+}
+
+.my-spin-basic-1s-eio {
+    animation: my-spin-basic 1s ease-in-out
+}
+
+.fadeInRight {
+    animation: fadeInRight 1s ease-in-out;
+} 
+
+.fadeInLeft { 
+    animation: fadeInLeft 1s ease-in-out; 
+}
+.navbar-mobile-button-font{
+    font-size: calc(1.8vh + 2vw); 
+}
+
+.med-font-u{
+    font-size: calc(2.5vh + 2.5vw);
+  }
+
+.new-font-u{
+    font-size: calc(1.55vh + 1.55vw)
+}
+.med-font-d{
+    font-size: calc(2vh + 2vw); 
+}
+
+.small-font-d{
+    font-size: calc(.98vh + .98vw);
+  }
+
+.small-font-m {
+    font-size: calc(2vh + 1.5vw);
+  }
+
+.title-font-u{
+    font-size: calc(5vh + 5vw); 
+}
+
+.title-font-d{
+    font-size: calc(2.8vh + 2.8vw)
+}
+
+.title-font-m{
+    font-size: calc(3.2vh + 3vw); 
+}
+
+.h2-font-m {
+    font-size: calc(2.8vh + 2.6vw); 
+}
+
+.h4-font-m {
+    font-size: calc(2vh + 1.9vw); 
+}
+
+.h3-font-m {
+    font-size: calc(2.3vh + 2.1vw); 
+}
+.h5-font-m {
+    font-size: calc(1.5vh + 1.3vw); 
+}
+
+.very-small-font-m{
+    font-size: calc(.87vh + .81vw); 
+}
+
+.project-font-m { 
+    font-size: calc(1.88vh + 1.88vw); 
+}
+
+.big-title-font-d{
+    font-size: calc(3.98vh + 3.98vw); 
+}
+
+
+
+.blur {
+    /* Blur effect for the rest of the content */
+    backdrop-filter: blur(5px); /* Adjust blur amount as needed */
+  }
+
+.enlarge {
+    /* Enlarge the About component */
+    transform: scale(1.2); /* Adjust the scale factor as needed */
+    /* Add any other styles to enlarge the component */
+  }
+
+.mobile-dropdown-enter{
+    animation: dropdownEnter .3s ease-in-out forwards; 
+    
+}
+.mobile-dropdown-exit{
+    animation: dropdownExit .3s ease-in-out forwards;  
+
+}
+
+.mobile-dropdown-text-enter{
+    animation: textDropdownEnter 0.3s ease-in-out forwards; 
+}
+.mobile-dropdown-text-exit{
+    animation: textDropdownExit 0.3s ease-in-out forwards; 
+}
+
+
+.quite-small-font-m {
+    font-size: calc(1.355vh + 1.355vh); 
+}
+
+
+.my-shadow-1{
+    text-shadow: 
+    0 0 12px rgba(31, 36, 193, 0.867), 
+    0 0 22px rgba(35, 54, 188, 0.888), 
+    0 0 26px rgba(49, 133, 196, 0.777),
+    0 0 44px rgba(200, 200, 200, .888); 
+}
+
+.inf-flicker{
+    animation: flicker 1.25s infinite alternate; 
+}
+
+.quick-flicker{
+    animation: flicker 3.45s ease-in-out;     
+}
