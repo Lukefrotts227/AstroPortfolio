@@ -9,14 +9,14 @@ import Academics from "./components/Academics";
 import Skills from './components/Skills'; 
 import Whatnext from "./components/Whatnext";
 
-export default function App() {
+export default function ReactComposite() {
 
 
 
   return (
-    <major  class = "bg-gray-800 h-full" style={{ position: 'relative', overflow: 'hidden' }}>
+    <main  class = "bg-gray-800 h-full" style={{ position: 'relative', overflow: 'hidden' }}>
       <Myback01/>
-      <main class="cursor-default h-full text-gray-50 py-11" style={{ position: 'relative', zIndex: 1 }}> 
+      <div class="cursor-default h-full text-gray-50 py-11" style={{ position: 'relative', zIndex: 1 }}> 
         <Navbar/>
         <Intro/>
         <About/>
@@ -25,8 +25,8 @@ export default function App() {
         <Skills/>
         <Academics/>
         <Whatnext/>
-      </main>
+      </div>
 
-    </major>
+    </main>
   );
 }
