@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'; 
 import Arrow from './svgs/Arrow';
-import { projects, miniProjects } from '../data'; 
+import { projects, miniProjects } from '..data/data'; 
 
 
 export default function Projects(){

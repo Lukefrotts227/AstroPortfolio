@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'; 
-import { skills } from '../data'; 
+import { skills } from '..data/data'; 
 
 export default function Skills(){
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 850); 
