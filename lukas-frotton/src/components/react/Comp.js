@@ -16,7 +16,7 @@ export default function ReactComposite() {
   return (
     <main  class = "bg-gray-800 h-full" style={{ position: 'relative', overflow: 'hidden' }}>
       <Myback01/>
-      <div class="cursor-default h-full text-gray-50 py-11" style={{ position: 'relative', zIndex: 1 }}> 
+      <div class="cursor-default h-full min-h-screen text-gray-50 py-11" style={{ position: 'relative', zIndex: 1 }}> 
         <Navbar/>
         <Intro/>
         <About/>
