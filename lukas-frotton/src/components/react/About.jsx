@@ -1,5 +1,5 @@
 import React, { useState,  useEffect } from "react";
-import { aboutMe } from '..data/data'; 
+import { aboutMe } from '../data/data'; 
 const Me = 'picofme4.jpg'; 
 
 export default function About(){

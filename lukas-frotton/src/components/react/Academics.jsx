@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'; 
-import { courses } from '..data/data'; 
+import { courses } from '../data/data';  
 
 export default function Academics(){
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 850); 

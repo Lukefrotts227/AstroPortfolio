@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'; 
-import { next_description  } from '..data/data';
+import { next_description  } from '../data/data'; 
 
 
 export default function Whatnext() {
