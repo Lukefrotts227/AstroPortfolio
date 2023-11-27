@@ -1,9 +1,32 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import ReactComposite from '../components/react/Comp.jsx'; 
+//import ReactComposite from '../components/react/Comp.jsx'; 
+import About from '../components/react/About.jsx';
+import Projects from '../components/react/Projects.jsx';
+import Navbar from '../components/react/Navbar.jsx';
+import Skills from '../components/react/Skills.jsx';
+import Touch from '../components/react/Touch.jsx';
+import Academics from '../components/react/Academics.jsx';
+import Intro from '../components/react/Intro.jsx';
+import Whatnext from '../components/react/Whatnext.jsx';
+import Myback01 from '../components/react/svgs/Myback01';
+import '../components/react/index.css'; 
 
 ---
 
 <Layout title={"Lukas Frotton"}>
-    <ReactComposite client:only/>
+    <main  class = "bg-gray-800 h-full" style={{ position: 'relative', overflow: 'hidden' }}>
+        <Myback01/>
+      <div class="cursor-default h-full text-gray-50 py-11" style={{ position: 'relative', zIndex: 1 }}> 
+        <Navbar client:only/>
+        <Intro client:only/>
+        <About client:only/>
+        <Touch client:only/>
+        <Projects client:only/>
+        <Skills client:only/>
+        <Academics client:only/>
+        <Whatnext client:only/>
+      </div>
+    </main>
+    
 </Layout>../components/react/Comp.jsx
