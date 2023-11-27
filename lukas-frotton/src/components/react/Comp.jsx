@@ -8,6 +8,7 @@ import Projects from "./Projects";
 import Academics from "./Academics"; 
 import Skills from './Skills'; 
 import Whatnext from "./Whatnext";
+import './index.css'; 
 
 export default function ReactComposite() {
 
