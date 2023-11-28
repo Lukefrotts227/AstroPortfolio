@@ -246,3 +246,49 @@ rgba(29, 78, 216, var(--opacity));
 .quick-flicker{
     animation: flicker 3.45s ease-in-out;     
 }
+
+
+
+/* Default styles for mobile */
+.about-header {
+    padding: 3rem 0;
+}
+
+.about-content {
+    text-align: center;
+    padding: 0 1.25rem;
+}
+
+.about-text {
+    /* Mobile-specific text styles */
+}
+
+.about-image img {
+    width: 16rem;
+    height: 18rem;
+    margin-top: 1rem;
+}
+
+/* Styles for desktop */
+@media (min-width: 850px) {
+    .about-header {
+        padding: 6rem 0;
+    }
+
+    .about-content {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .about-text {
+        /* Desktop-specific text styles */
+        padding-left: 0;
+    }
+
+    .about-image img {
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+    }
+}
