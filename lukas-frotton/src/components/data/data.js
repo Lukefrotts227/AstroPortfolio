@@ -1,4 +1,4 @@
-export const aboutMe = "My name is Lukas and I am a Computer Science major and currently a sophmore at Montclair State University. "
+export const aboutMe = "My name is Lukas and I am a Computer Science major and currently a sophmore at Rutgers University New Brunswick. "
 + "I love coding in my free time and am always looking to create new projects. To hone my skills, I have and will continue to attend "
 + "hackathons. I love learning new technologies, frameworks, skills and languages. I am always willing to test out something new at "
 + "at a hackathon, or for my own personal projects."
