@@ -3,7 +3,7 @@
 // Set url to a mailto: link for email.
 
 export const contact = {
-  email: "your@email.com",
+  email: "ljfrotton@gmail.com",
   links: [
     {
       label: "LinkedIn",
