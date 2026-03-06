@@ -1,22 +1,22 @@
 ---
 // src/components/Navbar.astro
 const navLinks = [
-  { label: "Research", href: "/#research" },
-  { label: "Projects", href: "/#projects" },
-  { label: "Blog",     href: "/blog" },
-  { label: "Contact",  href: "/#contact" },
+  { label: "Work",           href: "/#work" },
+  { label: "Background",     href: "/#background" },
+  { label: "Moving Forward", href: "/#moving-forward" },
+  { label: "Blog",           href: "/blog" },
+  { label: "Contact",        href: "/#contact" },
 ];
 ---
 
 <header class="fixed top-0 left-0 right-0 z-50 bg-[#fafafa]/90 backdrop-blur-sm border-b border-gray-100">
   <nav class="max-w-5xl mx-auto px-6 h-14 flex items-center justify-between">
 
-    <!-- Name / home link -->
     <a href="/" class="font-sans text-sm font-semibold text-gray-900 tracking-tight hover:text-indigo-500 transition-colors">
       Lukas Frotton
     </a>
 
-    <!-- Desktop nav links -->
+    <!-- Desktop -->
     <ul class="hidden md:flex items-center gap-8 list-none m-0 p-0">
       {navLinks.map(link => (
         <li>
@@ -27,7 +27,7 @@ const navLinks = [
       ))}
     </ul>
 
-    <!-- Mobile hamburger button -->
+    <!-- Mobile hamburger -->
     <button
       id="menu-toggle"
       class="md:hidden flex flex-col justify-center items-center w-8 h-8 gap-1.5 focus:outline-none"
@@ -40,7 +40,7 @@ const navLinks = [
 
   </nav>
 
-  <!-- Mobile dropdown menu -->
+  <!-- Mobile dropdown -->
   <div id="mobile-menu" class="hidden md:hidden border-t border-gray-100 bg-[#fafafa]">
     <ul class="max-w-5xl mx-auto px-6 py-4 flex flex-col gap-4 list-none m-0">
       {navLinks.map(link => (
@@ -63,7 +63,6 @@ const navLinks = [
 
   toggle?.addEventListener('click', () => {
     const open = menu?.classList.toggle('hidden') === false;
-    // Animate bars into X when open
     if (open) {
       bar1?.classList.add('rotate-45', 'translate-y-2');
       bar2?.classList.add('opacity-0');
@@ -75,7 +74,6 @@ const navLinks = [
     }
   });
 
-  // Close menu when a link is clicked
   menu?.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
       menu.classList.add('hidden');
