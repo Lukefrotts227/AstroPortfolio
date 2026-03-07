@@ -6,7 +6,7 @@ export const bio = {
 
   // Shows as a small status indicator in the intro — update this freely
   // e.g. "Currently: ML research @ Rutgers · Gap year · PhD applications 2026"
-  status: "Currenty updating my portfolio, and job searching.",
+  status: "Currently updating my portfolio, and job searching.",
 
   // Background section prose
   background: "",
